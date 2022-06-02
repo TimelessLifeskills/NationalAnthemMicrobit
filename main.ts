@@ -58,11 +58,11 @@ input.onButtonPressed(Button.A, function () {
     music.playTone(349, music.beat(BeatFraction.Whole))
 })
 let india1 = images.createBigImage(`
-    # . . . . . . . . #
-    . . # . . . . . . #
-    # . . # # # . # # #
-    # . . # . # . # . #
-    # . . # . # . # # #
+    . # . . . . . . . #
+    . . . . . . . . . #
+    . # . # # . . . # #
+    . # . # . # . # . #
+    . # . # . # . . # #
     `)
 let india2 = images.createBigImage(`
     . # . . . . . . . .
@@ -71,7 +71,15 @@ let india2 = images.createBigImage(`
     . # . # . # . . . .
     . # . # # # # . . .
     `)
+let flag = images.createBigImage(`
+    # # # # # # # # # .
+    # . . . . . . . # .
+    # . . . # . . . # .
+    # . . . . . . . # .
+    # # # # # # # # # .
+    `)
 basic.forever(function () {
     india1.scrollImage(1, 250)
     india2.scrollImage(1, 250)
+    flag.scrollImage(1, 250)
 })
